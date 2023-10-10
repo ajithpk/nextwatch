@@ -41,7 +41,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.getVideo()
+    this.getVideos()
   }
 
   getVideos = async () => {

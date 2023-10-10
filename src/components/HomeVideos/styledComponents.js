@@ -27,7 +27,7 @@ export const NoVideosNote = styled.p`
   color: ${props => props.noteColor};
 `
 
-export const RetryButton = styled.Button`
+export const RetryButton = styled.button`
   border: none;
   background-color: #4f46e5;
   border-radius: 3px;

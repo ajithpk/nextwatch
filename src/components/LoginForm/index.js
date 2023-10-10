@@ -74,6 +74,7 @@ class LoginForm extends Component {
           type="text"
           id="username"
           value={username}
+          name="username"
           onChange={this.onChangeHandler}
           placeholder="Username"
         />

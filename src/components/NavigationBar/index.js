@@ -86,7 +86,7 @@ class NavigationBar extends Component {
                     <NavText color={textColor}>Gaming</NavText>
                   </NavLinkContainer>
                 </NavLink>
-                <NavLink to="/saved-vidoes">
+                <NavLink to="/saved-videos">
                   <NavLinkContainer
                     keys="saved"
                     bgColor={activeTab === 'Saved' ? activeTabBg : 'none'}
@@ -158,7 +158,7 @@ class NavigationBar extends Component {
   )
 
   render() {
-    return <>{this.renderTabItems}</>
+    return <>{this.renderTabItems()}</>
   }
 }
 

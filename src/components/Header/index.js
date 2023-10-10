@@ -28,7 +28,7 @@ const Header = props => (
     {value => {
       const {isDarkTheme, toggleTheme} = value
       const color = isDarkTheme ? '#ffffff' : '#00306e0'
-      const bgColor = isDarkTheme ? '#231f20' : '#f155f9'
+      const bgColor = isDarkTheme ? '#231f20' : '#f1f1f1'
 
       const onChangeTheme = () => {
         toggleTheme()
