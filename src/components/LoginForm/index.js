@@ -60,8 +60,9 @@ class LoginForm extends Component {
     const data = await response.json()
     if (response.ok === true) {
       this.onSubmitSuccess(data.jwt_token)
+      console.log('login successfull')
     } else {
-      this.onSubmitSuccess(data.error_msg)
+      this.onSubmitFailure(data.error_msg)
     }
   }
 
@@ -112,7 +113,7 @@ class LoginForm extends Component {
     const {showSubmitError, errorMsg} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
-      return <Redirect to="/" />
+      return <Redirect to="/login" />
     }
     return (
       <AppContainer>
